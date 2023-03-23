@@ -1,6 +1,6 @@
 ﻿//Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
 
-double FillArray(int m, int n) 
+static void FillArray(int m, int n) 
 {
     double[,] array = new double[m, n];
  
@@ -14,13 +14,12 @@ double FillArray(int m, int n)
                 }
                 Console.WriteLine();
             }
-    return 0;
 }
 
-Console.WriteLine("Введите количество строк: "); 
+Console.Write("Введите количество строк: "); 
 int M = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите количество столбцов: "); 
+Console.Write("Введите количество столбцов: "); 
 int N = Convert.ToInt32(Console.ReadLine());
 
 FillArray(M, N);
